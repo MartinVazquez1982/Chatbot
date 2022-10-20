@@ -1,0 +1,146 @@
+version: "3.1"
+
+stories:
+
+- story: saludar
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - checkpoint: check_presentacion
+
+- story: presentarse
+  steps:
+  - checkpoint: check_presentacion
+  - intent: sePresenta
+    entities:
+      - reconocerNombre
+      - nro_dni
+  - action: action_extraer_datos
+  - checkpoint: check_consultas
+
+- story: consultas_estaBien
+  steps:
+  - checkpoint: check_consultas
+  - intent: estoyBien
+  - action: action_DobleResponse
+  - checkpoint: check_profesor
+
+- story: consultas_NoestaBien
+  steps:
+  - checkpoint: check_consultas
+  - intent: estoyMal
+  - action: action_DobleResponse
+  - checkpoint: check_profesor
+
+- story: esProfesor
+  steps:
+  - checkpoint: check_profesor
+  - intent: esProfe
+  - action: action_cargarProfesor
+  - action: utter_profesor
+
+- story: NoesProfesor
+  steps:
+  - checkpoint: check_profesor
+  - intent: noEsProfe
+  - action: action_cargarProfesor
+  - action: utter_profesor
+
+- story: datosPersonales
+  steps: 
+  - intent: consultaDeEdad
+  - action: utter_consultaEdad
+  - intent: lugarNacimiento
+  - action: utter_lugarNacimiento
+  - intent: hacerDeporte
+  - action: utter_consultaDeporte
+
+- story: academico_carrera
+  steps:
+  - intent: carrera
+  - action: utter_carrera
+
+- story: academico_donde_estudio
+  steps:
+  - intent: dondeEstudio
+  - action: utter_dondeEstudio
+
+- story: academico_consulta_materiasQueCurso
+  steps:
+  - intent: materiasQueCurso
+  - action: action_cursando
+
+- story: academico_consulta_carrera
+  steps:
+  - intent: consultaCarrera
+  - action: utter_consultaCarrera
+
+- story: academico_opiniones
+  steps:
+  - intent: preguntaSobreMateria
+    entities:
+      - materias
+  - action: action_opinionMaterias
+
+- story: academico_aprobadas
+  steps:
+  - intent: materiasQueAprobaste
+  - action: action_materiasAprobadas
+
+- story: academico_optativas
+  steps:
+  - intent: consultaOptativas
+  - action: utter_optativas
+
+- story: gustos
+  steps:
+  - intent: areasInformatica
+  - action: utter_zonaInfor
+
+# Grupal
+
+- story: consultar_por_ejercicio_path
+  steps:
+  - intent: consultar_por_ejercicio
+    entities: 
+      - materias
+      - inciso
+      - tp
+  - action: action_consultar_por_ejercicio
+
+- story: consultar_por_ejercicio_otro_lo_tiene_path
+  steps:
+  - intent: consultar_por_ejercicio_otro_lo_tiene
+  # - action: action_consultar_por_ejercicio_otro_lo_tiene
+
+- story: consultar_por_ejercicio_otro_NO_lo_tiene_path
+  steps:
+  - intent: consultar_por_ejercicio_otro_NO_lo_tiene
+  # - action: action_consultar_por_ejercicio_otro_NO_lo_tiene
+
+- story: consultar_por_ejercicio_agradece_path
+  steps:
+  - intent: consultar_por_ejercicio_agradece
+  #- action: action_consultar_por_ejercicio_agradece
+
+- story: interactive_story_1
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - intent: sePresenta
+    entities:
+    - reconocerNombre: martin
+    - nro_dni: '43659116'
+    - nro_dni: '43659116'
+    - reconocerNombre: martin
+  - slot_was_set:
+    - nombre: martin
+  - slot_was_set:
+    - dni: '43659116'
+  - action: action_extraer_datos
+  - slot_was_set:
+    - esProfesor: NoesProfesor
+  - intent: estoyBien
+  - slot_was_set:
+    - estadoAnimo: true
+  - action: action_DobleResponse

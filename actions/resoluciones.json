@@ -1,0 +1,462 @@
+{
+    "tranformacionesDeNombresMaterias": {
+        "introduccion a la programacion 1":"Introduccion a la Programacion 1",
+        "analisis matematico 1":"Analisis Matematico 1",
+        "algebra 1":"Algebra 1",
+        "quimica":"Quimica",
+        "ciencias de la computacion 1":"Ciencias de la Computacion 1",
+        "introduccion a la programacion 2":"Introduccion a la Programacion 2",
+        "algebra lineal":"Algebra Lineal",
+        "fisica general":"Fisica General",
+        "matematica discreta":"Matematica Discreta",
+        "ciencias de la computacion 2":"Ciencias de la Computacion 2",
+        "analisis y diseño de algoritmos 1":"Analisis y Diseño de Algoritmos 1",
+        "introduccion a la arquitectura de sistemas":"Introduccion a la Arquitectura de Sistemas",
+        "analisis matematico 2":"Analisis Matematico 2",
+        "electricidad y magnetismo":"Electricidad y Magnetismo",
+        "analisis y diseño de algoritmos 2":"Analisis y Diseño de Algoritmos 2",
+        "comunicacion de datos 1":"Comunicacion de Datos 1",
+        "probabilidad y estadistica":"Probabilidad y Estadistica",
+        "electronica digital":"Electronica Digital",
+        "ingles":"Ingles",
+        "programacion orientada a objetos":"Programacion Orientada a Objetos",
+        "estructura de alamcenamiento de datos":"Estructura de Almacenamiento de Datos",
+        "metodologias de desarrollo de software":"Metodologias de Desarrollo de Software",
+        "arquitectura de computadoras":"Arquitectura de Computadoras",
+        "programacion exploratoria":"Programacion Exploratoria",
+        "base de datos":"Base de Datos",
+        "bases de datos":"Base de Datos",
+        "lenguajes de programacion":"Lenguajes de Programacion",
+        "sistemas operativos":"Sistemas Operativos",
+        "investigacion operativa":"Investigacion Operativa",
+        "arquitectura de computador es y tecnicas digitales":"Arquitectura de Computadores y Tecnicas Digitales",
+        "teoria de la informacion":"Teoria de la Informacion",
+        "comunicacion de datos 2":"Comunicacion de Datos 2",
+        "introduccion al calculo diferencial e integral":"Introduccion al Calculo Diferencial e Integral",
+        "diseño de sistemas de software":"Diseño de Sistemas de Software",
+        "diseño de compiladores":"Diseño de Compiladores 1",
+        "ingenieria de software":"Ingenieria de Software"        
+    },
+    "ejercicios":{
+        "Introduccion a la Programacion 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Analisis Matematico 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Algebra 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Quimica":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Ciencias de la Computacion 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Introduccion a la Programacion 2":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Algebra Lineal":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Fisica General":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Matematica Discreta":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Ciencias de la Computacion 2":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Analisis y Diseño de Algoritmos 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Introduccion a la Arquitectura de Sistemas":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Analisis Matematico 2":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Electricidad y Magnetismo":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Analisis y Diseño de Algoritmos 2":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Comunicacion de Datos 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Probabilidad y Estadistica":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Electronica Digital":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Ingles":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Programacion Orientada a Objetos":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Estructura de Almacenamiento de Datos":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Metodologias de Desarrollo de Software":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Arquitectura de Computadoras":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Programacion Exploratoria":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Base de Datos":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Lenguajes de Programacion":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Sistemas Operativos":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Investigacion Operativa":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Arquitectura de Computadores y Tecnicas Digitales":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Teoria de la Informacion":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Comunicacion de Datos 2":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Introduccion al Calculo Diferencial e Integral":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Diseño de Sistemas de Software":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Diseño de Compiladores 1":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            }
+        },
+        "Ingenieria de Software":{
+            "1":{
+                "1":{"resolucion":"Ejercicio Resuelto"},
+                "3":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "2":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            },
+            "3":{
+                "1":{"resolucion":"Ejercicio Resuelto"}
+            }
+        }
+    }
+}

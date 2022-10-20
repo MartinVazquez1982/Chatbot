@@ -1,0 +1,224 @@
+version: '3.1'
+intents:
+- adios
+- areasInformatica
+- carrera
+- consultaCarrera
+- consultaDeEdad
+- consultaOptativas
+- consultar_por_ejercicio
+- consultar_por_ejercicio_agradece
+- consultar_por_ejercicio_otro_NO_lo_tiene
+- consultar_por_ejercicio_otro_lo_tiene
+- dondeEstudio
+- esProfe
+- estoyBien
+- estoyMal
+- hacerDeporte
+- lugarNacimiento
+- materiaAprobada
+- materiaCursando
+- materiasQueAprobaste
+- materiasQueCurso
+- noEsProfe
+- preguntaPorque
+- preguntaSobreMateria
+- saludar
+- sePresenta
+actions:
+- action_DobleResponse
+- action_cargarProfesor
+- action_consultar_por_ejercicio
+- action_consultar_por_ejercicio_agradece
+- action_consultar_por_ejercicio_otro_NO_lo_tiene
+- action_consultar_por_ejercicio_otro_lo_tiene
+- action_cursando
+- action_estadoMateria
+- action_extraer_datos
+- action_materiasAprobadas
+- action_opinionMaterias
+- action_porque
+- utter_consultaDeporte
+- utter_optativas
+- utter_profesor
+- utter_saludar
+entities:
+- nro_dni
+- reconocerNombre
+- materias
+- inciso
+- tp
+slots:
+  nombre:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: reconocerNombre
+  esProfesor:
+    type: text
+    initial_value: FaltaPreguntar
+    mappings:
+    - type: from_intent
+      intent: esProfe
+      value: esProfesor
+    - type: from_intent
+      intent: noEsProfe
+      value: NoesProfesor
+  pregMateria:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: materias
+  porque:
+    type: text
+    mappings:
+    - type: from_intent
+      intent: areasInformatica
+      value: areasInformatica
+    - type: from_intent
+      intent: consultaOptativas
+      value: consultaOptativas
+    - type: from_intent
+      intent: carrera
+      value: carrera
+  estadoAnimo:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: estoyBien
+      value: true
+    - type: from_intent
+      intent: estoyMal
+      value: false
+  dni:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: nro_dni
+  inciso:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: inciso
+  tp:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tp
+responses:
+  utter_saludar:
+  - text: Hola!, No me dirias tu nombre y dni
+  - text: Buenos Dias!, ¿Cual es tu nro de dni y tu nombre?
+  - text: Hola!, ¿Como te llamas y cual es tu dni?
+  - text: Buenos Dias!, ¿como es tu nombre y cual es tu dni?
+  utter_profesor:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: ¿En que te puedo ayudar?
+  - text: Genial {nombre}! si decime que necesitas
+  utter_consultaComoesta:
+  - text: ¿Como va tu dia?
+  - text: ¿Como estas?
+  - text: ¿Como te encuentras?
+  utter_adios:
+  - condition:
+    - type: slot
+      name: estadoAnimo
+      value: false
+    text: Hasta la proxima!, que mejore tu dia {nombre}
+  - text: Hasta Luego {nombre}!
+  - text: Nos vemos {nombre}
+  utter_devolucionEstadoAnimo:
+  - condition:
+    - type: slot
+      name: estadoAnimo
+      value: false
+    text: Uh todo mal es pasajero, va a mejorar.
+  - text: Que bueno!
+  utter_consultarSiesProfesor:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: FaltaPreguntar
+    text: Una consulta, sos profesor?
+  - text: ¿Que estas necesitando?
+  - text: Decime que necesitas
+  - text: ¿En que te puedo ayudar?
+  utter_consultaEdad:
+  - text: Tengo 20
+  - text: 20 años
+  - text: Tengo 20 años
+  utter_consultaDeporte:
+  - text: Hago Natación
+  - text: Si, Realizo Natación
+  - text: Practico Natación
+  utter_lugarNacimiento:
+  - text: Nací en Tandil
+  - text: Soy de Tandil
+  utter_carrera:
+  - text: Estoy estudiando Ingenieria de Sistemas
+  - text: Ingenieria de Sistemas
+  - text: Estudio Ingenieria de Sistemas
+  utter_dondeEstudio:
+  - text: En la UNICEN
+  - text: En UNICEN
+  - text: En la Facultad de Ciencias Exactas de UNICEN
+  utter_optativas:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: No he cursado materias optativas todavia
+  - text: No curso ninguna optativa, capaz que el año que viene
+  utter_consultaCarrera:
+  - text: bien, estoy en tercero
+  - text: La llevo bien, estoy en tercero
+  utter_aprobada:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: Si {pregMateria}, la aprobe
+  - text: Sisi esa materia la aprobe
+  - text: Si esta aprobada por suerte
+  utter_aunNoAprobada:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: no la he aprobado todavia a {pregMateria}
+  - text: no la tengo aprobada
+  utter_cursado:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: A {pregMateria} la estoy cursando
+  - text: la estoy cursando ahora
+  utter_zonaInfor:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: Las areas que mas me interesan son desarrollo de aplicaciones de escritorio y seguridad informatica
+  - text: Me gustan desarrollo de aplicaciones y seguridad informatica
+  utter_porfavor_repetir:
+  - condition:
+    - type: slot
+      name: esProfesor
+      value: esProfesor
+    text: Disculpame no te pude entender bien, me lo podrias repetir
+  - text: No te entendi, me repetis
+  - text: me podrias repetir?
+  utter_no_conozco_materia:
+  - text: no conozco esa materia
+  - text: no conozco esa materia, seguro que se escribe asi?
+  utter_paso_el_ejercicio:
+  - text: si, ahí te lo paso
+  utter_no_tengo_ejercicio:
+  - text: no, no lo tengo
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

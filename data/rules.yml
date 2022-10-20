@@ -1,0 +1,25 @@
+version: "3.1"
+
+rules:
+
+- rule: Regla de despedida
+  steps:
+  - intent: adios
+  - action: utter_adios
+
+- rule: Regla del Porque
+  steps:
+  - intent: preguntaPorque
+  - action: action_porque
+
+- rule: Regla estado materias
+  steps:
+  - or:
+    - intent: materiaAprobada
+    - intent: materiaCursando
+  - action: action_estadoMateria
+
+- rule: Regla no se entendio el mensaje
+  steps:
+  - intent: nlu_fallback
+  - action: utter_porfavor_repetir

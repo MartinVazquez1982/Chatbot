@@ -1,0 +1,329 @@
+version: "3.1"
+nlu:
+- intent: saludar
+  examples: |
+    - hola
+    - hola, como andas?
+    - que tal?
+    - buen dia
+    - buenas tardes
+    - buenas noches
+    - buenos dias
+    - buenas
+- intent: sePresenta
+  examples: |
+    - soy [martin](reconocerNombre) y mi dni es [14785236](nro_dni)
+    - soy [juan](reconocerNombre) y [12365478](nro_dni) es mi documento
+    - [felipe](reconocerNombre) y [74123658](nro_dni)
+    - mi dni es [65432914](nro_dni) y me llamo [francisco](reconocerNombre)
+    - mi nombre es [pedro](reconocerNombre) y mi dni es [96325874](nro_dni)
+    - me llamo [martin][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [43659116][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
+    - mi nombre es [martin][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [43659116][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
+    - soy [juan][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [46129873][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
+    - mi nombre es [martin][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [43659116][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
+- intent: adios
+  examples: |
+    - chau
+    - hasta luego
+    - nos vemos
+    - que tengas una linda tarde
+    - hasta pronto
+    - adios
+    - cuidate
+    - saludos cordiales
+    - un placer
+- intent: esProfe
+  examples: |
+    - si
+    - si soy
+    - afirmativo
+    - correcto
+    - como usted dice
+- intent: noEsProfe
+  examples: |
+    - no
+    - no soy
+    - negativo
+    - no para nada
+- intent: materiasQueCurso
+  examples: |
+    - que materias estas cursando?
+    - que cursas?
+    - En que materias te anotaste?
+    - Que cursas este cuatrimestre?
+    - que materias cursas?
+- intent: materiasQueAprobaste
+  examples: |
+    - que materias aprobaste?
+    - materias que aprobaste?
+    - cuales son las materias que aprobaste?
+    - cuales aprobaste?
+    - que finales tenes aprobados?
+    - cuales finales aprobaste?
+- intent: carrera
+  examples: |
+    - Que carrera estas haciendo?
+    - Que estudias?
+    - estudias algo?
+    - en que carrera estas?
+    - Que estas estudiando?
+- intent: dondeEstudio
+  examples: |
+    - donde?
+    - donde estudias?
+    - en que universidad estudias?
+    - donde estudias la carrera?
+    - donde lo estudias?
+- intent: consultaOptativas
+  examples: |
+    - cursas materias optativas?
+    - que materias optativas cursas?
+    - cursas optativas?
+    - como vas con las materias optativas?
+    - como venis con las optativas?
+    - cursas materias optativas
+- intent: preguntaSobreMateria
+  examples: |
+    - que te parecio [algebra 1](materias)
+    - como fue tu cursada de programacion orientada a objetos
+    - que tal es electricidad y magnetismo
+    - como es programacion exploratoria
+    - que opinion tenes acerca de teoria de la informacion
+    - que te parecio sistemas operativos
+    - que te parece investigacion operativa
+    - que tal es ciencias de la computacion 2
+    - que opinion tenes acerca de estructuras de almacenamiento de datos
+    - como fue la cursada de metodologias de desarrollo de software
+    - que opinion tenes de algebra 1
+    - que te parece disenio de compiladores
+    - que tal es introduccion a la programacion 1
+    - que te parecio arquitectura de computadoras y tecnicas digitales
+    - que tal es analisis y disenio de algoritmos 1
+    - que te parece [programacion exploratoria](materias)
+- intent: materiaAprobada
+  examples: |
+    - aprobaste [estructuras de almacenamiento de datos](materias)?
+    - tenes aprobada a teoria de la informacion?
+    - la aprobaste a bases de datos?
+    - aprobaste ciencias de la computacion 1
+    - como te fue en arquitectura de computadores y tecnicas digitales
+    - tenes aprobada a disenio de compiladores
+    - la aprobaste a quimica
+    - aprobaste programacion orientada a objetos
+    - tenes aprobada programacion exploratoria
+    - tenes aprobada algebra lineal
+    - la aprobaste a analisis y disenio de algoritmos 2
+- intent: materiaCursando
+  examples: |
+    - cursas [programacion exploratoria](materias)
+    - estas cursando ciencias de la computacion 2
+    - te anotaste a introduccion a la programacion 1
+    - cursas introduccion a la arquitectura de sistemas
+    - estas cursando algebra lineal
+    - te anotaste a disenio de sistemas de software
+    - cursas analisis matematico 2
+- intent: consultaDeEdad
+  examples: |
+    - Cuantos años tenes?
+    - Que edad tenes?
+    - edad?
+    - cuanto años tenias?
+- intent: hacerDeporte
+  examples: |
+    - Haces Deporte?
+    - Realizas a algún deporte?
+    - Deporte?
+    - Haces alguna actividad deportiva?
+    - Practicas deporte?
+    - Haces algun deporte?
+    - que deporte haces
+- intent: lugarNacimiento
+  examples: |
+    - Donde naciste?
+    - De donde sos?
+    - De que ciudad sos?
+    - En que ciudad naciste?
+    - De donde eres?
+- intent: areasInformatica
+  examples: |
+    - que areas de informatica te interesan?
+    - que te gusta de la informatica?
+    - de informatica, que areas te gustan?
+- intent: preguntaPorque
+  examples: |
+    - por?
+    - por que?
+    - me decis el por que?
+    - cual es el motivo?
+    - por que
+- intent: consultaCarrera
+  examples: |
+    - como vas?
+    - como venis?
+    - En que año estas?
+    - como la estas llevando?
+- intent: estoyBien
+  examples: |
+    - estoy bien
+    - bien
+    - muy bien
+    - me encuentro bien
+    - voy bien
+- intent: estoyMal
+  examples: |
+    - me encuentro mal
+    - mal
+    - muy mal
+    - bastante mal
+- intent: consultar_por_ejercicio
+  examples: |
+    - hola buenas, alguno tiene el inciso [1](inciso) del tp [2](tp) de la materia [algebra lineal](materias)?
+    - che, alguno tiene el inciso [2](inciso) del tp [5](tp) de la materia programacion orientada a objetos?
+    - alguno se copa y me pasa el [inciso 4](inciso) del tp [3](tp) de la materia analisis matematico 1?
+    - alguno tiene el inciso [3](inciso) del tp [1](tp) de la materia diseño de compiladores?
+    - che juan, tenes el inciso [5](inciso) del tp [4](tp) de la materia comunicacion de datos 2?
+    - che juan, tenes el inciso [5](inciso) del tp [4](tp) de comunicacion de datos 2?
+    - alguno tiene el inciso [3](inciso) del tp [1](tp) de diseño de compiladores?
+    - alguno se copa y me pasa el inciso [4](inciso) del tp [3](tp) de analisis matematico 1?
+    - alguno tiene el [4](inciso) del tp [3](tp) de analisis matematico 1?
+    - alguno tiene de analisis matematico 1 el inciso [2](inciso) del tp [4](tp)?
+- intent: consultar_por_ejercicio_otro_NO_lo_tiene
+  examples: |
+    - no, no lo tengo ese inciso
+    - no, no lo tengo
+    - no, no lo tengo ese tp
+    - noup, no lo tengo
+    - no lo hice ese inciso
+    - no lo hice ese tp
+    - no lo hice
+    - no hay chance, es imposible ese inciso
+    - no hay chance, es imposible ese tp
+    - no hay chance, es imposible
+    - no lo tengo
+- intent: consultar_por_ejercicio_otro_lo_tiene
+  examples: |
+    - si, lo tengo
+    - sisi, ese lo tengo
+    - sisi, ese lo hice
+    - sip, lo tengo
+    - sisi, lo hice
+    - si, lo hice
+    - si, lo tengo resuelto
+    - sisi, ese inciso era re facil
+    - sisi, ese tp era re facil
+    - sisi, una boludes ese inciso
+    - sisi, una boludes ese tp
+    - sisi, ahi te lo paso
+    - sisi, ahi te lo mando
+    - si amigo, ahi te lo mando
+    - si, ahi te lo paso
+    - ahi te lo paso
+    - ahi te lo mando
+    - ese inciso era re facil
+    - ese tp era re facil
+    - lo tengo resuelto, ahí te lo paso
+- intent: consultar_por_ejercicio_agradece
+  examples: |
+    - geniall, muchas gracias por el inciso
+    - geniall, muchas gracias por el tp
+    - geniall, muchas gracias
+    - gracias por el inciso
+    - gracias por el tp
+    - me sirve ese inciso
+    - me sirve ese tp
+    - me sirve
+- regex: inciso
+  examples: |
+    - ( \d{1} )
+- regex: nro_dni
+  examples: |
+    - \d{8}
+- regex: tp
+  examples: |
+    - ( \d{1} )
+- lookup: reconocerNombre
+  examples: |
+    - Martino
+    - Juan Ignacio
+    - Juan
+    - David
+    - Leonel
+    - Tomas
+    - Joaquin
+    - Tadeo
+    - Mateo
+    - Ignacio
+    - Agustin
+    - Gerorimo
+    - Ximena
+    - Luisina
+    - Sol
+    - Delfina
+    - Pia
+    - Guadalupe
+    - Luis
+    - Martin
+    - Analia
+    - Adan
+    - Clara
+    - Fermin
+    - Lara
+    - Santino
+    - Fernando
+    - Bautista
+    - Nicolas
+    - Matias
+    - Alejandro
+    - Adriel
+    - Agustin
+    - Alan
+    - Santiago
+    - Yoel
+    - Paula
+    - Gonzalo
+    - Valentin
+    - Flor
+    - Mariano
+    - Nahuel
+    - Franco
+    - Felipe
+    - Pedro
+    - Francisco
+    - maria
+    - manuela
+- lookup: materias
+  examples: |
+    - introduccion a la programacion 1
+    - Analisis matematico 1
+    - algebra 1
+    - quimica
+    - ciencias de la computacion 1
+    - introduccion a la programacion 2
+    - algebra lineal
+    - fisica general
+    - matematica discreta
+    - ciencias de la computacion 2
+    - analisis y disenio de algoritmos 1
+    - introduccion a la arquitectura de sistemas
+    - analisis matematico 2
+    - electricidad y magnetismo
+    - analisis y disenio de algoritmos 2
+    - comunicacion de datos 1
+    - probabilidad y estadistica
+    - electronica digital
+    - programacion orientada a objetos
+    - estructura de almacenamiento de datos
+    - metodologias de desarrollo de software
+    - arquitectura de computadoras
+    - programacion exploratoria
+    - base de datos
+    - lenguajes de programacion
+    - sistemas operativos
+    - investigacion operativa
+    - arquitectura de computadores y tecnicas digitales
+    - teoria de la informacion
+    - comunicacion de datos 2
+    - introduccion al calculo diferencial e integral
+    - disenio de sistemas de software
+    - disenio de compiladores
+    - ingenieria de software

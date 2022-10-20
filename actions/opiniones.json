@@ -1,0 +1,21 @@
+{
+    "algebra 1":{
+        "opinion":"Me parecio una buena materia, bastante pesada y medias aburridas las clases"
+    },
+
+    "ciencias de la computacion 2":{
+        "opinion":"Es una materia interesante y esta bien dada"
+    },
+
+    "programacion orientada a objetos":{
+        "opinion":"Es una muy buena materia, interesante y no es pesada"
+    },
+
+    "introduccion a la programacion 1":{
+        "opinion":"Muy linda materia y ademas es la primera en la que te empezas a meter en el ambiente de la programacion"
+    },
+
+    "analisis y disenio de algoritmo 1":{
+        "opinion":"Tiene bastante contenido y muy pesado, es una materia que no la podes soltar en todo el cuatrimestre"
+    }
+}
