@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-inciso",
+      "2": "I-inciso",
+      "3": "L-inciso",
+      "4": "U-inciso",
+      "5": "B-materias",
+      "6": "I-materias",
+      "7": "L-materias",
+      "8": "U-materias",
+      "9": "B-nro_dni",
+      "10": "I-nro_dni",
+      "11": "L-nro_dni",
+      "12": "U-nro_dni",
+      "13": "B-reconocerNombre",
+      "14": "I-reconocerNombre",
+      "15": "L-reconocerNombre",
+      "16": "U-reconocerNombre",
+      "17": "B-tp",
+      "18": "I-tp",
+      "19": "L-tp",
+      "20": "U-tp",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-inciso": 1,
+      "I-inciso": 2,
+      "L-inciso": 3,
+      "U-inciso": 4,
+      "B-materias": 5,
+      "I-materias": 6,
+      "L-materias": 7,
+      "U-materias": 8,
+      "B-nro_dni": 9,
+      "I-nro_dni": 10,
+      "L-nro_dni": 11,
+      "U-nro_dni": 12,
+      "B-reconocerNombre": 13,
+      "I-reconocerNombre": 14,
+      "L-reconocerNombre": 15,
+      "U-reconocerNombre": 16,
+      "B-tp": 17,
+      "I-tp": 18,
+      "L-tp": 19,
+      "U-tp": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

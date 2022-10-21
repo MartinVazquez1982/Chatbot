@@ -1,6 +1,6 @@
 {
     "areasInformatica":{
-        "porque": "Son las que mas me gustan porque siempre me intereso las vulnerabilidades de las aplicaciones y en cuanto al me gusta crear cosas, pensarlar e implementarlas"
+        "porque": "Son las que mas me gustan porque siempre me intereso las vulnerabilidades de las aplicaciones y en cuanto al desarrollo me gusta crear cosas, pensarlar e implementarlas"
     },
 
     "consultaOptativas":{
@@ -13,5 +13,13 @@
 
     "noAprobada":{
         "porque":"Todavia no la he cursado"
+    },
+
+    "buenDia":{
+        "porque":"Hoy me levante de buen humor!"
+    },
+
+    "malDia":{
+        "porque":"Nose, no estoy de buen humor"
     }
 }

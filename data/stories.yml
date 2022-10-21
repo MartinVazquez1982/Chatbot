@@ -63,7 +63,7 @@ stories:
 - story: academico_donde_estudio
   steps:
   - intent: dondeEstudio
-  - action: utter_dondeEstudio
+  - action: action_consultaCarrera
 
 - story: academico_consulta_materiasQueCurso
   steps:
@@ -73,7 +73,7 @@ stories:
 - story: academico_consulta_carrera
   steps:
   - intent: consultaCarrera
-  - action: utter_consultaCarrera
+  - action: action_consultaCarrera
 
 - story: academico_opiniones
   steps:

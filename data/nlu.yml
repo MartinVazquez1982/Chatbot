@@ -169,12 +169,14 @@ nlu:
     - muy bien
     - me encuentro bien
     - voy bien
+    - la llevo bien
 - intent: estoyMal
   examples: |
     - me encuentro mal
     - mal
     - muy mal
     - bastante mal
+    - bastante complicado
 - intent: consultar_por_ejercicio
   examples: |
     - hola buenas, alguno tiene el inciso [1](inciso) del tp [2](tp) de la materia [algebra lineal](materias)?

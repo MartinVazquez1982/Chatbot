@@ -14,11 +14,13 @@ from urllib import response
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+from sqlalchemy import false
 from swiplserver import PrologMQI, PrologThread
 import random
 import os.path
 import json
 import time
+import random
 
 # Archivos Json
 
@@ -149,7 +151,9 @@ class ActionPorque(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         opiniones = OperarArchivosJson.cargarArchivoPorque()
         consulta = tracker.get_slot('porque')
-        message=''
+        print(consulta)
+        message='No me lo he puesto a pensar'
+        print('pase')
         if str(consulta) in opiniones:
             message=opiniones[consulta]['porque']
         dispatcher.utter_message(text=str(message))
@@ -192,10 +196,12 @@ class ActionExtraerDatos(Action):
         if str(dni) in personas:
             dispatcher.utter_message(text=str('Hola de nuevo ' + personas[dni]['nombre']))
             dispatcher.utter_message(response="utter_consultaComoesta")
+            time.sleep(1)
             consulProfe=str(personas[dni]['esProfesor'])
             return [SlotSet('esProfesor',consulProfe)]
         else:
             dispatcher.utter_message(text=str('No te tenia agendado, ahi te agrego!'))
+            time.sleep(1)
             dispatcher.utter_message(response="utter_consultaComoesta")
             return []
 
@@ -229,6 +235,36 @@ class ActionDobleResponse(Action):
         print('pase')
         return[]
     
+class ActionConsultaCarrera(Action):
+    
+    def name(self) -> Text:
+        return "action_consultaCarrera"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        consulta = tracker.get_slot('temaCarrera')
+        print(consulta)
+        if consulta:
+            intent = tracker.get_intent_of_latest_message()
+            if str(intent) == "consultaCarrera":
+                dispatcher.utter_message(response="utter_consultaCarrera")
+            else:
+                dispatcher.utter_message(response="utter_dondeEstudio")
+            return[SlotSet('temaCarrera',False)]
+        elif str(tracker.get_intent_of_latest_message()) == "dondeEstudio":
+            dispatcher.utter_message(response="utter_dondeEstudio")
+        else:
+            valor = random.randint(-1,1)
+            print(valor)
+            if (valor >= 0):
+                dispatcher.utter_message(text="Bien, esta siendo un buen dia")
+                return [SlotSet('porque',"buenDia")]
+            else:
+                dispatcher.utter_message(text="Mas o menos, es un dia complicado")
+                return [SlotSet('porque',"malDia")]
+            
+
+                
+
 # Grupal
 
 class Action_consultar_por_ejercicio(Action): # 
