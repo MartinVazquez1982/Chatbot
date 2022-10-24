@@ -13,8 +13,6 @@ intents:
 - consultar_por_ejercicio_otro_lo_tiene
 - dondeEstudio
 - esProfe
-- estoyBien
-- estoyMal
 - hacerDeporte
 - lugarNacimiento
 - materiaAprobada
@@ -26,6 +24,8 @@ intents:
 - preguntaSobreMateria
 - saludar
 - sePresenta
+- contestacionesAnimoPositiva
+- contestacionesAnimoNegativa
 
 actions:
 - action_DobleResponse
@@ -45,6 +45,7 @@ actions:
 - utter_profesor
 - utter_saludar
 - action_consultaCarrera
+- action_reconocerEstadoDeAnimo
 
 entities:
 - nro_dni
@@ -88,13 +89,9 @@ slots:
       value: carrera
   estadoAnimo:
     type: bool
+    initial_value: false
     mappings:
-    - type: from_intent
-      intent: estoyBien
-      value: true
-    - type: from_intent
-      intent: estoyMal
-      value: false
+    - type: custom
   dni:
     type: text
     mappings:
@@ -146,14 +143,6 @@ responses:
     text: Hasta la proxima!, que mejore tu dia {nombre}
   - text: Hasta Luego {nombre}!
   - text: Nos vemos {nombre}
-
-  utter_devolucionEstadoAnimo:
-  - condition:
-    - type: slot
-      name: estadoAnimo
-      value: false
-    text: Uh todo mal es pasajero, va a mejorar.
-  - text: Que bueno!
 
   utter_consultarSiesProfesor:
   - condition:

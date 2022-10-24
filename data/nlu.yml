@@ -10,6 +10,7 @@ nlu:
     - buenas noches
     - buenos dias
     - buenas
+
 - intent: sePresenta
   examples: |
     - soy [martin](reconocerNombre) y mi dni es [14785236](nro_dni)
@@ -21,6 +22,7 @@ nlu:
     - mi nombre es [martin][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [43659116][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
     - soy [juan][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [46129873][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
     - mi nombre es [martin][{"entity": "reconocerNombre"}, {"entity": "reconocerNombre"}] y mi dni es [43659116][{"entity": "nro_dni"}, {"entity": "nro_dni"}]
+
 - intent: adios
   examples: |
     - chau
@@ -32,6 +34,7 @@ nlu:
     - cuidate
     - saludos cordiales
     - un placer
+
 - intent: esProfe
   examples: |
     - si
@@ -39,12 +42,14 @@ nlu:
     - afirmativo
     - correcto
     - como usted dice
+
 - intent: noEsProfe
   examples: |
     - no
     - no soy
     - negativo
     - no para nada
+
 - intent: materiasQueCurso
   examples: |
     - que materias estas cursando?
@@ -52,6 +57,7 @@ nlu:
     - En que materias te anotaste?
     - Que cursas este cuatrimestre?
     - que materias cursas?
+
 - intent: materiasQueAprobaste
   examples: |
     - que materias aprobaste?
@@ -60,6 +66,25 @@ nlu:
     - cuales aprobaste?
     - que finales tenes aprobados?
     - cuales finales aprobaste?
+
+- intent: contestacionesAnimoPositiva
+  examples: |
+    - estoy bien
+    - voy bien
+    - me va bien
+    - muy bien
+    - la voy llevando bien
+    - bastante bien
+
+- intent: contestacionesAnimoNegativa
+  examples: |
+    - me cuesta
+    - bastante mal
+    - mal
+    - muy mal
+    - ahi voy
+    - es muy dificil
+
 - intent: carrera
   examples: |
     - Que carrera estas haciendo?
@@ -67,6 +92,7 @@ nlu:
     - estudias algo?
     - en que carrera estas?
     - Que estas estudiando?
+
 - intent: dondeEstudio
   examples: |
     - donde?
@@ -74,6 +100,7 @@ nlu:
     - en que universidad estudias?
     - donde estudias la carrera?
     - donde lo estudias?
+
 - intent: consultaOptativas
   examples: |
     - cursas materias optativas?
@@ -82,6 +109,7 @@ nlu:
     - como vas con las materias optativas?
     - como venis con las optativas?
     - cursas materias optativas
+
 - intent: preguntaSobreMateria
   examples: |
     - que te parecio [algebra 1](materias)
@@ -100,6 +128,7 @@ nlu:
     - que te parecio arquitectura de computadoras y tecnicas digitales
     - que tal es analisis y disenio de algoritmos 1
     - que te parece [programacion exploratoria](materias)
+
 - intent: materiaAprobada
   examples: |
     - aprobaste [estructuras de almacenamiento de datos](materias)?
@@ -113,6 +142,7 @@ nlu:
     - tenes aprobada programacion exploratoria
     - tenes aprobada algebra lineal
     - la aprobaste a analisis y disenio de algoritmos 2
+
 - intent: materiaCursando
   examples: |
     - cursas [programacion exploratoria](materias)
@@ -122,12 +152,14 @@ nlu:
     - estas cursando algebra lineal
     - te anotaste a disenio de sistemas de software
     - cursas analisis matematico 2
+
 - intent: consultaDeEdad
   examples: |
     - Cuantos años tenes?
     - Que edad tenes?
     - edad?
     - cuanto años tenias?
+
 - intent: hacerDeporte
   examples: |
     - Haces Deporte?
@@ -137,6 +169,7 @@ nlu:
     - Practicas deporte?
     - Haces algun deporte?
     - que deporte haces
+
 - intent: lugarNacimiento
   examples: |
     - Donde naciste?
@@ -144,11 +177,13 @@ nlu:
     - De que ciudad sos?
     - En que ciudad naciste?
     - De donde eres?
+
 - intent: areasInformatica
   examples: |
     - que areas de informatica te interesan?
     - que te gusta de la informatica?
     - de informatica, que areas te gustan?
+
 - intent: preguntaPorque
   examples: |
     - por?
@@ -156,27 +191,15 @@ nlu:
     - me decis el por que?
     - cual es el motivo?
     - por que
+    
 - intent: consultaCarrera
   examples: |
     - como vas?
     - como venis?
     - En que año estas?
     - como la estas llevando?
-- intent: estoyBien
-  examples: |
-    - estoy bien
-    - bien
-    - muy bien
-    - me encuentro bien
-    - voy bien
-    - la llevo bien
-- intent: estoyMal
-  examples: |
-    - me encuentro mal
-    - mal
-    - muy mal
-    - bastante mal
-    - bastante complicado
+    - como estas?
+
 - intent: consultar_por_ejercicio
   examples: |
     - hola buenas, alguno tiene el inciso [1](inciso) del tp [2](tp) de la materia [algebra lineal](materias)?

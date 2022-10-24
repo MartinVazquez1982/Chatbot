@@ -198,6 +198,7 @@ class ActionExtraerDatos(Action):
             dispatcher.utter_message(response="utter_consultaComoesta")
             time.sleep(1)
             consulProfe=str(personas[dni]['esProfesor'])
+            print(consulProfe)
             return [SlotSet('esProfesor',consulProfe)]
         else:
             dispatcher.utter_message(text=str('No te tenia agendado, ahi te agrego!'))
@@ -247,9 +248,14 @@ class ActionConsultaCarrera(Action):
             intent = tracker.get_intent_of_latest_message()
             if str(intent) == "consultaCarrera":
                 dispatcher.utter_message(response="utter_consultaCarrera")
+                esProfesor = tracker.get_slot('esProfesor')
+                print(esProfesor)
+                if esProfesor == "NoesProfesor":
+                    dispatcher.utter_message(text="Vos como vas en tu carrera?")
             else:
                 dispatcher.utter_message(response="utter_dondeEstudio")
-            return[SlotSet('temaCarrera',False)]
+            if esProfesor != "NoesProfesor":
+                return[SlotSet('temaCarrera',False)]
         elif str(tracker.get_intent_of_latest_message()) == "dondeEstudio":
             dispatcher.utter_message(response="utter_dondeEstudio")
         else:
@@ -261,10 +267,34 @@ class ActionConsultaCarrera(Action):
             else:
                 dispatcher.utter_message(text="Mas o menos, es un dia complicado")
                 return [SlotSet('porque',"malDia")]
-            
+        return[]
 
+
+class ActionConsultaCarrera(Action):
+    
+    def name(self) -> Text:
+        return "action_reconocerEstadoDeAnimo"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        consulta = tracker.get_slot('temaCarrera')
+        intent = tracker.get_intent_of_latest_message()
+        print(intent)
+        if consulta:
+            if (intent == "contestacionesAnimoPositiva"):
+                dispatcher.utter_message(text="Que bueno!, Seguí asi")
+            else:
+                dispatcher.utter_message(text="Uhh, bueno de a poco vas a ir mejorando")
+            return[SlotSet('temaCarrera',False)]
+        else:
+            if (intent == "contestacionesAnimoPositiva"):
+                dispatcher.utter_message(text="Que bueno!")
+                return[SlotSet('estadoAnimo',True)]
+            else:
+                dispatcher.utter_message(text="Uh todo mal es pasajero, va a mejorar.")
+        return[]
                 
-
+#Falta agregar acction, preparar la rule y importar bibliotecas
+                
 # Grupal
 
 class Action_consultar_por_ejercicio(Action): # 
@@ -290,8 +320,9 @@ class Action_consultar_por_ejercicio(Action): #
                 print(materiaLower)
                 print(ejercicio)
                 dispatcher.utter_message(response="utter_paso_el_ejercicio")
+                dispatcher.utter_image_url(image=ejercicio)
             except:
-                dispatcher.utter_message(response="utter_no_tengo_ejercicio")#, tp=tp,inciso=inciso, materia=materia)
+                dispatcher.utter_message(response="utter_no_tengo_ejercicio")
         else:
             dispatcher.utter_message(response="utter_no_conozco_materia")
         return []

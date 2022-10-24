@@ -16,20 +16,16 @@ stories:
       - reconocerNombre
       - nro_dni
   - action: action_extraer_datos
-  - checkpoint: check_consultas
+  - checkpoint: check_animo
 
-- story: consultas_estaBien
-  steps:
-  - checkpoint: check_consultas
-  - intent: estoyBien
-  - action: action_DobleResponse
-  - checkpoint: check_profesor
 
-- story: consultas_NoestaBien
+- story: estadoAnimo
   steps:
-  - checkpoint: check_consultas
-  - intent: estoyMal
-  - action: action_DobleResponse
+  - checkpoint: check_animo
+  - or:
+    - intent: contestacionesAnimoPositiva
+    - intent: contestacionesAnimoNegativa
+  - action: action_reconocerEstadoDeAnimo
   - checkpoint: check_profesor
 
 - story: esProfesor
@@ -74,6 +70,13 @@ stories:
   steps:
   - intent: consultaCarrera
   - action: action_consultaCarrera
+  - slot_was_set:
+    - esProfesor: NoesProfesor
+  - or:
+    - intent: contestacionesAnimoPositiva
+    - intent: contestacionesAnimoNegativa
+  - action: action_reconocerEstadoDeAnimo
+
 
 - story: academico_opiniones
   steps:
@@ -138,9 +141,4 @@ stories:
   - slot_was_set:
     - dni: '43659116'
   - action: action_extraer_datos
-  - slot_was_set:
-    - esProfesor: NoesProfesor
-  - intent: estoyBien
-  - slot_was_set:
-    - estadoAnimo: true
-  - action: action_DobleResponse
+
