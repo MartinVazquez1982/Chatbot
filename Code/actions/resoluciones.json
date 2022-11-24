@@ -1,0 +1,81 @@
+{
+    "tranformacionesDeNombresMaterias": {
+        "introduccion a la programacion 1":"Introduccion a la Programacion 1",
+        "analisis matematico 1":"Analisis Matematico 1",
+        "algebra 1":"Algebra 1",
+        "quimica":"Quimica",
+        "ciencias de la computacion 1":"Ciencias de la Computacion 1",
+        "introduccion a la programacion 2":"Introduccion a la Programacion 2",
+        "algebra lineal":"Algebra Lineal",
+        "fisica general":"Fisica General",
+        "matematica discreta":"Matematica Discreta",
+        "ciencias de la computacion 2":"Ciencias de la Computacion 2",
+        "analisis y diseño de algoritmos 1":"Analisis y Diseño de Algoritmos 1",
+        "introduccion a la arquitectura de sistemas":"Introduccion a la Arquitectura de Sistemas",
+        "analisis matematico 2":"Analisis Matematico 2",
+        "electricidad y magnetismo":"Electricidad y Magnetismo",
+        "analisis y diseño de algoritmos 2":"Analisis y Diseño de Algoritmos 2",
+        "comunicacion de datos 1":"Comunicacion de Datos 1",
+        "probabilidad y estadistica":"Probabilidad y Estadistica",
+        "electronica digital":"Electronica Digital",
+        "ingles":"Ingles",
+        "programacion orientada a objetos":"Programacion Orientada a Objetos",
+        "estructura de alamcenamiento de datos":"Estructura de Almacenamiento de Datos",
+        "metodologias de desarrollo de software":"Metodologias de Desarrollo de Software",
+        "arquitectura de computadoras":"Arquitectura de Computadoras",
+        "programacion exploratoria":"Programacion Exploratoria",
+        "base de datos":"Base de Datos",
+        "bases de datos":"Base de Datos",
+        "lenguajes de programacion":"Lenguajes de Programacion",
+        "sistemas operativos":"Sistemas Operativos",
+        "investigacion operativa":"Investigacion Operativa",
+        "arquitectura de computador es y tecnicas digitales":"Arquitectura de Computadores y Tecnicas Digitales",
+        "teoria de la informacion":"Teoria de la Informacion",
+        "comunicacion de datos 2":"Comunicacion de Datos 2",
+        "introduccion al calculo diferencial e integral":"Introduccion al Calculo Diferencial e Integral",
+        "diseño de sistemas de software":"Diseño de Sistemas de Software",
+        "diseño de compiladores":"Diseño de Compiladores 1",
+        "ingenieria de software":"Ingenieria de Software"        
+    },
+    "ejercicios":{
+        "Introduccion a la Programacion 1":{
+            "2":{
+                "3":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/kFfaV.png?v=1667352496484"}
+            }
+        },
+        "Ciencias de la Computacion 1":{
+            "2":{
+                "1":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/MTrevers.png?v=1667353315321"}
+            }
+        },
+        "Fisica General":{
+            "1":{
+                "2":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/arbol%20tp%201.png?v=1666481032110"}
+            },
+            "2":{
+                "1":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/arbol%20tp%201.png?v=1666481032110"}
+            }
+        },
+        "Analisis Matematico 2":{
+            "1":{
+                "3":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/WhatsApp%20Image%202022-11-01%20at%2010.35.49%20PM.jpeg?v=1667352979117"}
+            }
+        },
+        "Analisis y Diseño de Algoritmos 2":{
+            "3":{
+                "3":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/maxresdefault.jpg?v=1667353084841"}
+            }
+        },
+        "Electronica Digital":{
+            "2":{
+                "1":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/sumadorCompleto1.jpg?v=1667353363927"}
+            }
+        },
+        "Metodologias de Desarrollo de Software":{
+            "1":{
+                "1":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/Class-Diagram-ATM-system-750x660.png?v=1667353438380"},
+                "3":{"resolucion":"https://cdn.glitch.global/e00326af-405c-49d9-8ddb-974cdb12e5dd/descarga.png?v=1667353472872"}
+            }
+        }
+    }
+}
